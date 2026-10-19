@@ -1,16 +1,15 @@
 
-const menuToggle = document.getElementById("menuToggle");
-const navLinks = document.getElementById("navLinks");
+const menuToggle = document.getElementById("menu-toggle");
+const navLinks = document.getElementById("nav-links");
 
-// Open and close the mobile menu
 menuToggle.addEventListener("click", function () {
-    const isOpen = navLinks.classList.toggle("open");
+    navLinks.classList.toggle("open");
 
+    const isOpen = navLinks.classList.contains("open");
     menuToggle.setAttribute("aria-expanded", isOpen);
     menuToggle.textContent = isOpen ? "✕" : "☰";
 });
 
-// Close menu after selecting a link
 document.querySelectorAll(".nav-links a").forEach(function (link) {
     link.addEventListener("click", function () {
         navLinks.classList.remove("open");
@@ -19,6 +18,6 @@ document.querySelectorAll(".nav-links a").forEach(function (link) {
     });
 });
 
-// Show the current year automatically
 document.getElementById("year").textContent =
     new Date().getFullYear();
+
