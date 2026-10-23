@@ -2,148 +2,155 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ashifa Suhaina | Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ashifa Suhaina | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header>
-        <nav class="navbar">
-            <a href="#home" class="logo">Ashifa<span>.</span></a>
+<header class="navbar">
+  <a class="logo" href="#home">ASHIFA.</a>
+  <nav id="navLinks">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <div class="nav-actions">
+    <button id="themeToggle" class="theme-btn" type="button">☀️</button>
+    <button id="menuToggle" class="menu-btn" type="button">☰</button>
+  </div>
+</header>
 
-            <button class="menu-toggle" id="menu-toggle"
-                    aria-label="Toggle navigation" aria-expanded="false">
-                ☰
-            </button>
+<main>
+  <section id="home" class="hero section">
+    <div class="hero-text">
+      <p class="welcome">WELCOME TO MY PORTFOLIO</p>
+      <h1>Hi, I'm <span>Ashifa Suhaina</span></h1>
+      <h2>I'm a <span id="typingText"></span><span class="cursor">|</span></h2>
+      <p>I'm a B.Sc Computer Science student interested in programming, web development and creating useful projects.</p>
+      <div class="hero-buttons">
+        <a href="#projects" class="btn">View My Projects</a>
+        <a href="#contact" class="btn btn-outline">Contact Me</a>
+      </div>
+    </div>
+    <div class="hero-image">
+      <img src="PHOTO.png" alt="Ashifa Suhaina">
+    </div>
+  </section>
 
-            <ul class="nav-links" id="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+  <section id="about" class="section">
+    <p class="section-label">GET TO KNOW ME</p>
+    <h2 class="section-title">About <span>Me</span></h2>
+    <div class="about-card">
+      <p>Hello! I'm Ashifa Suhaina M I, a B.Sc Computer Science student. I enjoy learning new technologies, improving my coding skills and building creative projects.</p>
+      <p>My goal is to grow as a software developer and create useful, attractive and easy-to-use websites.</p>
+    </div>
+  </section>
 
-    <main>
-        <!-- Home Section -->
-        <section class="hero" id="home">
-            <div class="hero-content">
-                <p class="eyebrow">HELLO, WELCOME TO MY PORTFOLIO</p>
-                <h1>Hi, I'm <span>Ashifa Suhaina</span></h1>
-                <h2>B.Sc Computer Science Student</h2>
-                <p class="hero-text">
-                    I am learning programming and web development
-                    to become a skilled software developer.
-                </p>
-                <a href="#projects" class="btn">View My Projects</a>
-            </div>
+  <section id="skills" class="section">
+    <p class="section-label">WHAT I KNOW</p>
+    <h2 class="section-title">My <span>Skills</span></h2>
+    <div class="skills-grid">
+      <div class="skill-card">
+        <div class="skill-info"><span>HTML</span><span>85%</span></div>
+        <div class="skill-track"><div class="skill-fill" data-level="85%"></div></div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-info"><span>CSS</span><span>75%</span></div>
+        <div class="skill-track"><div class="skill-fill" data-level="75%"></div></div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-info"><span>Java</span><span>70%</span></div>
+        <div class="skill-track"><div class="skill-fill" data-level="70%"></div></div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-info"><span>Python</span><span>60%</span></div>
+        <div class="skill-track"><div class="skill-fill" data-level="60%"></div></div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-info"><span>JavaScript</span><span>55%</span></div>
+        <div class="skill-track"><div class="skill-fill" data-level="55%"></div></div>
+      </div>
+    </div>
+    <p class="small-note">Change percentages according to your actual skill levels.</p>
+  </section>
 
-            <div class="profile-card">
-                <img src="PHOTO.png" alt="Ashifa Suhaina"
-                     class="avatar">
-                <h3>Ashifa Suhaina M I</h3>
-                <p>B.Sc Computer Science</p>
-                <p class="status">● Learning &amp; Growing</p>
-            </div>
-        </section>
+  <section id="projects" class="section">
+    <p class="section-label">MY WORK</p>
+    <h2 class="section-title">My <span>Projects</span></h2>
+    <div class="carousel">
+      <button id="prevProject" class="carousel-btn" type="button">❮</button>
+      <div class="carousel-window">
+        <div class="carousel-track" id="projectTrack">
+          <article class="project-card">
+            <span class="project-number">PROJECT 01</span>
+            <h3>Personal Portfolio</h3>
+            <p>A responsive portfolio website to showcase my skills and projects.</p>
+            <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+            <span class="project-status">Completed</span>
+          </article>
+          <article class="project-card">
+            <span class="project-number">PROJECT 02</span>
+            <h3>Age and Date Calculator</h3>
+            <p>A simple calculator to calculate age using date of birth.</p>
+            <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+            <span class="project-status in-progress">In Progress</span>
+          </article>
+          <article class="project-card">
+            <span class="project-number">PROJECT 03</span>
+            <h3>Complaint Management System</h3>
+            <p>A student project to record complaints and track their status.</p>
+            <div class="tags"><span>Java</span><span>Swing</span></div>
+            <span class="project-status in-progress">In Progress</span>
+          </article>
+        </div>
+      </div>
+      <button id="nextProject" class="carousel-btn" type="button">❯</button>
+    </div>
+    <div class="carousel-dots" id="carouselDots"></div>
+  </section>
 
-        <!-- About Section -->
-        <section class="section" id="about">
-            <p class="eyebrow">GET TO KNOW ME</p>
-            <h2>About <span>Me</span></h2>
+  <section id="contact" class="section">
+    <p class="section-label">LET'S CONNECT</p>
+    <h2 class="section-title">Contact <span>Me</span></h2>
+    <div class="contact-layout">
+      <div class="contact-info">
+        <h3>Have a project in mind?</h3>
+        <p>Send me a message about projects, learning or collaboration!</p>
+      </div>
 
-            <div class="card">
-                <p>
-                    Hello! I am Ashifa Suhaina M I, a B.Sc Computer
-                    Science student. I am learning programming and
-                    web development through practice and academic
-                    projects. My goal is to become a skilled software
-                    developer and create useful applications.
-                </p>
-            </div>
-        </section>
+      <form id="contactForm" class="contact-form" novalidate>
+        <label for="contactName">Your Name</label>
+        <input id="contactName" type="text" placeholder="Enter your name" required>
 
-        <!-- Skills Section -->
-        <section class="section" id="skills">
-            <p class="eyebrow">WHAT I AM LEARNING</p>
-            <h2>My <span>Skills</span></h2>
+        <label for="contactEmail">Your Email</label>
+        <input id="contactEmail" type="email" placeholder="example@gmail.com" required>
+        <small id="emailError" class="error-message" aria-live="polite"></small>
 
-            <div class="grid">
-                <div class="card">
-                    <h3>HTML</h3>
-                    <p>Web Structure</p>
-                </div>
-                <div class="card">
-                    <h3>CSS</h3>
-                    <p>Web Design</p>
-                </div>
-                <div class="card">
-                    <h3>JavaScript</h3>
-                    <p>Interactivity</p>
-                </div>
-                <div class="card">
-                    <h3>Java</h3>
-                    <p>Programming</p>
-                </div>
-            </div>
-        </section>
+        <label for="contactMessage">Your Message</label>
+        <textarea id="contactMessage" rows="5" placeholder="Write your message (20–500 characters)" maxlength="500" required></textarea>
+        <div class="message-info">
+          <small id="messageError" class="error-message" aria-live="polite"></small>
+          <small class="char-counter"><span id="charCount">0</span>/500 characters (minimum 20)</small>
+        </div>
 
-        <!-- Projects Section -->
-        <section class="section" id="projects">
-            <p class="eyebrow">MY WORK</p>
-            <h2>My <span>Projects</span></h2>
+        <button type="submit" class="btn">Send Message</button>
+        <p id="formMessage" class="form-message" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+</main>
 
-            <div class="grid">
-                <div class="card project-card">
-                    <h3>Age and Date Calculator</h3>
-                    <p>
-                        A Java project planned to calculate age
-                        and date differences.
-                    </p>
-                    <span class="tag">In Progress</span>
-                </div>
+<footer class="footer">
+  <p>© <span id="currentYear"></span> Ashifa Suhaina M I</p>
+  <p>Designed with 💜 and code.</p>
+</footer>
 
-                <div class="card project-card">
-                    <h3>Personal Portfolio</h3>
-                    <p>
-                        A personal website created using HTML,
-                        CSS and JavaScript.
-                    </p>
-                    <span class="tag">Live Website</span>
-                </div>
-            </div>
-        </section>
-
-        <!-- Contact Section -->
-        <section class="section" id="contact">
-            <p class="eyebrow">LET'S CONNECT</p>
-            <h2>Contact <span>Me</span></h2>
-
-            <div class="card contact-card">
-                <p>
-                    Thank you for visiting my portfolio!
-                    You can contact me through email.
-                </p>
-                <a class="btn" href="mailto:YOUR_EMAIL@example.com">
-                    Email Me
-                </a>
-                <p class="note">
-                    Replace YOUR_EMAIL@example.com with your real email.
-                </p>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <p>Designed &amp; Built by Ashifa Suhaina</p>
-        <p>© <span id="year"></span> All rights reserved.</p>
-    </footer>
-
-    <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
+
 
